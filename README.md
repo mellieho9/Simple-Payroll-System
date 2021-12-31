@@ -4,34 +4,34 @@ A simple payroll system that calculates gross pay given a set of employees, hour
 ## Background
 This is my work to an assignment from my 1600 CS I class: Creating a simple payroll system in C++, which takes in employee names, number of hours worked, and their hourly rate to compute their gross pay. 
 
-## Test case (The values after the ":" sign is the user input)
-> Enter an employee name: Charlie Brown
-> Enter an employee name: Lucy van Pelt
-> Enter an employee name: Peppermint Patty
-> Enter an employee name: quit
-> Enter Charlie Brown's hourly pay rate: 25.50
-> Enter Lucy van Pelt's hourly pay rate: .05
-> Enter Peppermint Patty's hourly pay rate: 19.50
-> Enter Charlie Brown's hours for 7 days (0 if day off): 1.5 0 0 0 0 0 3
-> Enter Lucy van Pelt's hours for 7 days (0 if day off): 1 0 0 0 0 0 1
-> Enter Peppermint Patty's hours for 7 days (0 if day off): 1.5 2.5 3.5 4.5 5.5 6.5 7.5
-       > Employee Name Total Hours Gross Pay
-       > Charlie Brown        4.50    114.75
-       > Lucy van Pelt        2.00      0.10
-    > Peppermint Patty       31.50    614.25
-> Highest Pay: $614.25 Peppermint Patty
-> Lowest Pay: $0.10 Lucy van Pelt
+## Test case (bold is the user input)
+Enter an employee name: **Charlie Brown**
+Enter an employee name: **Lucy van Pelt**
+Enter an employee name: **Peppermint Patty**
+Enter an employee name: **quit**
+Enter Charlie Brown's hourly pay rate: **25.50**
+Enter Lucy van Pelt's hourly pay rate: **.05**
+Enter Peppermint Patty's hourly pay rate: **19.50**
+Enter Charlie Brown's hours for 7 days (0 if day off): **1.5 0 0 0 0 0 3**
+Enter Lucy van Pelt's hours for 7 days (0 if day off): **1 0 0 0 0 0 1**
+Enter Peppermint Patty's hours for 7 days (0 if day off): **1.5 2.5 3.5 4.5 5.5 6.5 7.5**
+       Employee Name Total Hours Gross Pay
+       Charlie Brown        4.50    114.75
+       Lucy van Pelt        2.00      0.10
+       Peppermint Patty       31.50    614.25
+Highest Pay: $614.25 Peppermint Patty
+Lowest Pay: $0.10 Lucy van Pelt
 
 
 ## My Approach
 1. I first declared and initialized the two constant variables:
   - <code>SIZE = 999</code>: The maximum number of employees the user can enter into an array
-  - <code>NUMDAYS = 7</code>: The number of days in a week
+  - <code>NUMDAYS =7</code>: The number of days in a week
 2. I defined the following arrays in my main program:
   - <code>employeeNames[SIZE]</code> for the employee names of each employee
   - <code>hourlyPay[SIZE]</code> for the hourly pay rate of each employee
-  - <code>workHours[SIZE][NUMDAYS]</codes> for number of hours each employee works every day
-  - <code>grossPay[SIZE]</codes> for the gross pay each employee receives
+  - <code>workHours[SIZE][NUMDAYS]</code> for number of hours each employee works every day
+  - <code>grossPay[SIZE]</code> for the gross pay each employee receives
 3. I created four functions:
   - <code>getEmployeeNames(string NameArray[],int MaxSize)</code>: Takes the user's keyboard inputs and store each string inputs into the an array designated for containing employees' name until the user enters "quit". The function also returns the number of the employees entered into the array.
   - <code>getHourlyPay(string NameArray[],double hourlyPayArray[], int NumberOfNamesFilled)</code>: Takes the user's keyboard inputs and store each double inputs into an array designated for containing employees' hourly rates until the hourly rates of all employees are entered. 
