@@ -2,7 +2,7 @@
 A simple payroll system that calculates gross pay given a set of employees, hours worked for the week, and hourly rate
 
 ## Background
-This is my work to an assignment from my 1600 CS I class: Creating a simple payroll system in C++, which takes in employee names, number of hours worked, and their hourly rate to compute their gross pay. 
+This is my response to an assignment from my 1600 CS I class: Creating a simple payroll system in C++, which takes in employee names, number of hours worked, and their hourly rate to compute their gross pay. 
 
 ## My Approach
 1. I first declared and initialized the two constant variables:
