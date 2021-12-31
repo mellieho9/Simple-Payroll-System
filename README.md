@@ -4,7 +4,8 @@ A simple payroll system that calculates gross pay given a set of employees, hour
 ## Background
 This is my work to an assignment from my 1600 CS I class: Creating a simple payroll system in C++, which takes in employee names, number of hours worked, and their hourly rate to compute their gross pay. 
 
-## Test case (bold is the user input)
+## Test case (bold is the user input
+```
 Enter an employee name: **Charlie Brown**
 Enter an employee name: **Lucy van Pelt**
 Enter an employee name: **Peppermint Patty**
@@ -21,7 +22,7 @@ Enter Peppermint Patty's hours for 7 days (0 if day off): **1.5 2.5 3.5 4.5 5.5 
        Peppermint Patty       31.50    614.25
 Highest Pay: $614.25 Peppermint Patty
 Lowest Pay: $0.10 Lucy van Pelt
-
+```
 
 ## My Approach
 1. I first declared and initialized the two constant variables:
@@ -42,7 +43,7 @@ Lowest Pay: $0.10 Lucy van Pelt
  6. I then declared an array <code>totalHours</code> with the size equivalent to the number of employees entered by the user.
  7. I created a nested loop which traverses the <code>employeeName</code> array and the <code>workHours</code> array to enter the number of hours each employee works for each day of the week and add these hours together as the total hours each employee works. After the inner loop ends, I compute the gross pay of each employee by multiplying the said total of hours with the employee's hourly rate.
  8. I then used a for loop to output a table displaying the gross pay each entered employees received.
- 9. Finally, i used the simple <code>cout</code> function to output the values in the <code>grossPay> array which is the highest and lowest.
+ 9. Finally, i used the simple <code>cout</code> function to output the values in the <code>grossPay</code> array which is the highest and lowest.
 
 ## License
 [Apache](https://choosealicense.com/licenses/apache-2.0/)
